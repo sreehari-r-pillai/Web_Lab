@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>String Functions</title>
+</head>
+<body>
+<p id="demo_1"></p>
+<p id="demo_2"></p>
+<p id="demo_3"></p>
+<p id="demo_4"></p>
+<p id="demo_5"></p>
+<p id="demo_6"></p>
+<p id="demo_7"></p>
+<p id="demo_8"></p>
+<p id="demo_9"></p>
+<p id="demo_10"></p>
+<p id="demo_11"></p>
+<p id="demo_12"></p>
+<p id="demo_13"></p>
+<p id="demo_14"></p>
+<script>
+let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+document.getElementById("demo_1").innerHTML=text.length;
+
+let text_1 = "Apple, Banana, Kiwi";
+let part_1 = text_1.slice(7,13);
+document.getElementById("demo_2").innerHTML=part_1;
+
+let text_2 = "Apple, Banana, Kiwi";
+let part_2 = text_2.slice(7);
+document.getElementById("demo_3").innerHTML=part_2;
+
+let text_3 = "Apple, Banana, Kiwi";
+let part_3 = text_3.slice(-12);
+document.getElementById("demo_4").innerHTML=part_3;
+
+let text_4 = "Apple, Banana, Kiwi";
+let part_4 = text_4.slice(-12, -6);
+document.getElementById("demo_5").innerHTML=part_4;
+
+let str = "Apple, Banana, Kiwi";
+document.getElementById("demo_6").innerHTML = str.substring(7,13);
+
+let str_1 = "Apple, Banana, Kiwi";
+document.getElementById("demo_7").innerHTML = str_1.substr(7,6);
+
+let t1 = "Please visit Microsoft!";
+let newtext = t1.replace("Microsoft","Google");
+document.getElementById("demo_8").innerHTML=newtext;
+
+let txt = "I love cats. Cats are very easy to love. Cats are very popular."
+txt = txt.replaceAll("Cats","Dogs");
+txt = txt.replaceAll("cats","dogs");
+document.getElementById("demo_9").innerHTML = txt;
+
+let text1 = "Hello World!";
+let text2 = text1.toUpperCase();
+document.getElementById("demo_10").innerHTML=text2;
+
+let text3 = "Hello World!";
+let text4 = text3.toLowerCase();
+document.getElementById("demo_11").innerHTML=text4;
+
+let text5 = "Hello";
+let text6 = "World";
+let text7 = text5.concat(" ",text6);
+document.getElementById("demo_12").innerHTML=text7; 
+
+let text8 = "      Hello Good Morning!      ";
+let text9 = text8.trim();
+document.getElementById("demo_13").innerHTML=text9;
+
+let text11 = "HELLO WORLD";
+let char = text11.charAt(0);
+document.getElementById("demo_14").innerHTML = char;
+</script>
+</body>
+</html>
