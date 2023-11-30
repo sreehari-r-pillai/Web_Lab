@@ -18,9 +18,9 @@ $password=$_POST['password'];
 $sql="select * from user_registration where user_name='$name' AND password='$password'"; 
 $result=mysqli_query($conn,$sql); 
 if(mysqli_num_rows($result)>0){
-echo "Login Success"; 
+header('Location:loginsuccess.html');
 } else {
-echo "Login Failed";
+header('Location:loginunsuccess.html');
 }
 mysqli_close($conn);
 }
